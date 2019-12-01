@@ -43,15 +43,11 @@ def input_letter(stage):
        
         if len(input_letter) == 1 and ord(input_letter) in range(97, 123, 1) and not input_letter in stage:
             return input_letter
-        else:
-            continue
-
+        
 def game_result(stage):
     "Vrátí výsledek hry"
-    if '-' in stage:
-        return "GAME OVER"
-    else:
-        return "YOU WON!"
+    return "GAME OVER!" if '-' in stage else "YOU WON!
+
   
 def hangman():
     "Samotná hra hangman"

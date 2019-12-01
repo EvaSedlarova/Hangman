@@ -4,7 +4,8 @@ from io import StringIO
 
 def test_choose_word():
     "Test, zda se se vybere slovo z listu"
-    assert hangman.choose_word() == "aftershock" or "background" or "trampoline" or "cat"
+    word = hangman.choose_word()
+    assert word == "aftershock" or word == "background" or word == "trampoline" or word == "cat"
 
 def test_set_stage():
     "Testuji, zda se nastaví prázdné pole o správném počtu znaků"
